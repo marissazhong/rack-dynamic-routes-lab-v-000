@@ -13,6 +13,7 @@ class Application
       if item
         resp.write item.price
       else
+        resp.write "We don't have that item"
         resp.status = 400
       end
     else
